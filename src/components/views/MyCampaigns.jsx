@@ -23,7 +23,7 @@ class MyCampaigns extends Component {
       campaigns: {},
       visiblePages: 10,
       skipPages: 0,
-      itemsPerPage: 5,
+      itemsPerPage: 15,
     };
 
     this.editCampaign = this.editCampaign.bind(this);

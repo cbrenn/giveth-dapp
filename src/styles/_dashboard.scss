@@ -6,11 +6,11 @@
 
   table {
     font-size: 0.8rem;
-    margin-top: 50px;  
+    margin-top: 50px;
 
     @media (max-width: 768px) {
       font-size: 1rem;
-    }   
+    }
 
     th {
       white-space: nowrap;
@@ -23,17 +23,34 @@
 
     .td-name,
     .td-donated-to {
-      min-width: 350px; 
+      min-width: 350px;
     }
+
+  .td-transaction-name,
+  .td-transaction-creation-date,
+   {
+    min-width: 80px;
+  }
+
+  .td-transaction-amount-dollars,
+  .td-transaction-amount-eth,
+  {
+    min-width: 80px;
+    text-align: center;
+  }
 
     .td-donations-number,
-    .td-donations-amount {
+    .td-donations-amount,
+    {
       min-width: 80px;
-      text-align: center;   
+      text-align: center;
     }
 
-    .td-status {
-      min-width: 80px;
+    .td-status,
+    .td-user-action,
+    td-user-role,
+    {
+      min-width: 50px;
     }
 
     .td-transaction-status {
@@ -66,7 +83,7 @@
     margin-left: 4px;
 
     &:not(.btn-link) {
-     color: white !important;   
+     color: white !important;
     }
 
     i {
@@ -75,12 +92,12 @@
 
     @media (max-width: 768px) {
       font-size: 1rem;
-    }       
+    }
   }
 
   th {
     border-bottom: 2px solid #c7c7c7;
-    border-top: none;    
+    border-top: none;
   }
 
   .no-results {

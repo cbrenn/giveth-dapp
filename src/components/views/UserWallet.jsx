@@ -9,6 +9,8 @@ import GivethWallet from '../../lib/blockchain/GivethWallet';
 import Loader from '../Loader';
 import config from '../../configuration';
 import BridgeWithdrawButton from '../BridgeWithdrawButton';
+import AllTransactions from './AllTransactions';
+
 // TODO: Remove the eslint exception after extracting to model
 /* eslint no-underscore-dangle: 0 */
 
@@ -160,6 +162,9 @@ class UserWallet extends Component {
               </div>
             )}
         </center>
+        <div>
+          <AllTransactions currentUser={this.props.currentUser} />
+        </div>
       </div>
     );
   }
